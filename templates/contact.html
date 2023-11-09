@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        color: rgb(245, 11, 89);
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-weight: bold;
+    }
+</style>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/about3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img src="{% static 'images/about4.jpg' %}">
+
+    </div>
+   
+</div>
+<h1>CONTACT</h1>
+<strong>
+    Mail: P.O. Box, 6 FI-70201 KUOPIO
+    Visting address: Microkatu 1, FI-70201 KUOPIO
+    <a href="#">jerome@jerome.fi</a>
+    <p>Phone: +1 (123) 456-7890</p>
+</strong>
+{% endblock %}

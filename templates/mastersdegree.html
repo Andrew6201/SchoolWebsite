@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    
+        
+    body{
+     background-color: rgb(245, 11, 89);
+    }
+     .title{
+         text-align: center;
+         color: white;
+         font-weight: bold;
+     }
+     img{
+        width: 90%;
+        margin-top: 7px;
+     }
+     .btn{
+         
+         margin-top: 10px;
+         width: 200px;
+         background-color: black;
+         color: white;
+         font-weight: bold;
+         margin-bottom: 10px;
+         
+         
+     }
+     .btn:hover{
+         background-color: white;
+         color: black;
+     }
+     .bach-programs{
+         
+     }
+     .bach{
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         
+     }
+     p{
+        font-size: 17px;
+        
+     }
+    
+ </style>
+ 
+ 
+ 
+     <h1 class="title">MASTER'S DEGREE PROGRAMS</h1>
+     <diV class="row">
+
+        <div class="col">
+            <div class="card" >
+            <img src="{% static 'images/digitalhealth.webp' %}">
+             <h2  style="margin-right: 10px; font-weight: bold;font-size: 30px;">DIGITAL HEALTH</h2>
+             <p>
+                The Master’s Degree in Digital Health provide the graduates with skills needed for innovative development of digital social and health care services, expert organisation management and for the development of service quality and management.
+             </p>
+             <a href="{% url 'digitalhealth' %}" class="btn" style="margin-right: 10px;">Read more</a>
+            </div>
+        </div>
+
+            <div class="col">
+            <div class="card" style="margin-top:8px">
+             <img src="{% static 'images/energy.webp' %}">
+             
+             <h2 style="margin-right: 10px; font-weight: bold;font-size: 30px;">ENERGY ENGINEERING, </h2>
+             <p>
+                The focus of the Master Degree Programme in Energy Engineering is to educate professionals in engineering and business management in the field of international energy engineering projects.
+             </p>
+             <a href="{% url 'energy' %}"  class="btn ">Read more</a>
+             
+            </div>
+            </div>
+         </div>
+
+         
+        
+
+            
+
+        
+         
+         
+
+     </diV>
+
+     
+     
+ 
+
+{% endblock %}

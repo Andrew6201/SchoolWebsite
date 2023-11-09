@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    img{
+        width: 100%;
+        margin-top: 10px;
+    }
+</style>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/gallery4.webp' %}">
+    </div>
+    <div class="col">
+        <img src="{% static 'images/gallery3.webp' %}">
+    </div>
+    <diV class="col">
+        <img src="{% static 'images/gallery5.webp' %}">
+    </diV>
+</div>
+
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/nursing1.webp' %}">
+    </div>
+    <div class="col">
+        <img src="{% static 'images/gallery7.webp' %}">
+    </div>
+    <diV class="col">
+        <img src="{% static 'images/gallery8.webp' %}">
+    </diV>
+</div>
+
+<div class="row">
+    <div class="col">
+        <img style="height: 300px;" src="{% static 'images/gallery10.webp' %}">
+    </div>
+    <div class="col">
+        <img src="{% static 'images/gallery2.webp' %}">
+    </div>
+    <diV class="col">
+        <img src="{% static 'images/gallery12.webp' %}">
+    </diV>
+</div>
+{% endblock %}

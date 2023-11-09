@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h3{
+        
+        font-weight: bold;
+        
+    }
+    p{
+        font-size: 17px;
+    }
+    .all{
+        margin-left: 18px;
+    }
+</style>
+
+<h1>SCHOLARSHIP</h1>
+<div class="all">
+<p>Savonia UAS will not grant scholarships for the 1st academic year.</p>
+
+<p>In the 2nd and upcoming academic years, the scholarship covers max. 50% of the tuition fee. To qualify for the scholarship of 40% of the tuition fee, the student must complete at least 55 credits during the previous academic year. The additional 10% of the tuition fee is based on the student’s level of proficiency in the Finnish language.</p>
+
+<p>Savonia UAS grants scholarships only for the tuition fee. The scholarship is not paid to the student but is deducted directly from the tuition fee.</p>
+
+<h3>SCHOLARSHIP IN NUTSHELL</h3>
+<img src="{% static 'images/scholarship1.png' %}">
+<h3>1st academic year<ul>
+    <li>No scholarship</li>
+    <li>Tuition fee to be paid: 4800 €</li>
+</ul></h3>
+
+<h3>2nd academic year</h3>
+<ul>
+    <li>Scholarship: 40% 
+        <ul>
+            <li>Requirement: 55 credits done in the previous academic year according to the curriculum</li>
+            <li>Tuition fee to be paid: 4800 €</li>
+        </ul>
+    </li>
+    <li>+ additional scholarship 10% 
+        <ul>
+            <li>Requirement: if you have 55 credits and level of proficiency in the Finnish language A2.1</li>
+            <li>Tuition fee to be paid: 4000 €</li>
+        </ul>
+    </li>
+    <li>Tuition fee to be paid if you do not fulfill the scholarship criteria by 31 July: 8000€</li>
+</ul>
+
+<h3>3rd academic year</h3>
+<ul>
+    <li>Scholarship: 40% 
+        <ul>
+            <li>Requirement: 55 credits done in the previous academic year according to the curriculum</li>
+            <li>Tuition fee to be paid: 4800 €</li>
+        </ul>
+    </li>
+    <li>+ additional scholarship 10% 
+        <ul>
+            <li>Requirement: if you have 55 credits and level of proficiency in the Finnish language B1.1</li>
+            <li>Tuition fee to be paid: 4000 €</li>
+        </ul>
+    </li>
+    <li>Tuition fee to be paid if you do not fulfill the scholarship criteria by 31 July: 8000€</li>
+</ul>
+
+<h3>4th academic year</h3>
+<ul>
+    <li>Scholarship: 40% 
+        <ul>
+            <li>Requirement: 55 credits done in the previous academic year according to the curriculum</li>
+            <li>Tuition fee to be paid: 4800 €</li>
+        </ul>
+    </li>
+    <li>+ additional scholarship 10% 
+        <ul>
+            <li>Requirement: if you have 55 credits and level of proficiency in the Finnish language B1.1</li>
+            <li>Tuition fee to be paid: 4000 €</li>
+        </ul>
+    </li>
+    <li>Tuition fee to be paid if you do not fulfill the scholarship criteria by 31 July: 8000€</li>
+</ul>
+<h3>NEXT STUDY YEARS</h3>
+<p>The scholarship can only be granted for the statutory study time. If you continue your studies after the statutory study time, the tuition fee to be paid is 8000 € per academic year.</p>
+<p>Statutory study times for different extents of study programmes are:<ul>
+    <li>210 credits Bachelor’s degree – 3,5 years</li>
+    <li>240 credits Bachelor’s degree – 4 years</li>
+</ul></p>
+
+<h3>DEVELOPING FINNISH LANGUAGE SKILLS</h3>
+<img src="{% static 'images/scholarship2.webp' %}">
+
+<h3>Scholarship based on humanitarian reasons for Ukrainians</h3>
+<p>As an exception to normal scholarship scheme, Savonia UAS grants scholarships to Ukrainian degree students in Finland. These students will get a full scholarship based on humanitarian reasons and need for protection, so that they do not need to pay the tuition fees. The scholarship is granted based on a valid passport or other ID, which indicates, that the student is a citizen of Ukraine.</p>
+
+</div>
+
+
+{% endblock %}

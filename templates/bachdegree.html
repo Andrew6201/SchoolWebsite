@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    
+        
+    body{
+     background-color: rgb(245, 11, 89);
+    }
+     .title{
+         text-align: center;
+         color: white;
+         font-weight: bold;
+     }
+     img{
+        width: 90%;
+        margin-top: 7px;
+     }
+     .btn{
+         
+         margin-top: 10px;
+         width: 200px;
+         background-color: black;
+         color: white;
+         font-weight: bold;
+         margin-bottom: 10px;
+         
+         
+     }
+     .btn:hover{
+         background-color: white;
+         color: black;
+     }
+     .bach-programs{
+         
+     }
+     .bach{
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         
+     }
+     p{
+        font-size: 17px;
+        
+     }
+    
+ </style>
+ 
+ 
+ 
+     <h1 class="title">BACHELOR'S DEGREE PROGRAMS</h1>
+     <diV class="row">
+
+        <div class="col">
+            <div class="card" >
+            <img src="{% static 'images/business3.avif' %}">
+             <h2  style="margin-right: 10px; font-weight: bold;font-size: 30px;">Bachelor of Business International Business</h2>
+             <p>
+                Administration, International Business programme aims to develop global business experts with a specialisation in foreign trade and in the internationalisation process of businesses.It prepares one to be able to be independent, and at the same time promotes global business. BBA graduates are valuable assets to small- and medium-sized companies going global. Our BBAs work in import-export operations, marketing, international sales, customer care, and other international activities.
+             </p>
+             <a href="{% url 'business' %}" class="btn" style="margin-right: 10px;">Read more</a>
+            </div>
+
+
+            <div class="card" style="margin-top:8px">
+             <img src="{% static 'images/nursing3.jpg' %}">
+             
+             <h2 style="margin-right: 10px; font-weight: bold;font-size: 30px;">Bachelor of Health Care, Registered Nurse</h2>
+             <p>
+                The Bachelor of Health Care, Registered Nurse programme aims to develop competent and highly skilled nurses with an excellent knowledge of encountering, supervising and caring for people with diverse health issues. The degree programme provides you with extensive knowledge of nursing. You will master the required concepts, methods and skills to enable critical assessment and decision-making in changing and unpredictable nursing situations.
+             </p>
+             <a href="{% url 'nursing' %}"  class="btn ">Read more</a>
+             
+            </div>
+         </div>
+
+         <div class="col">
+            <div class="card" >
+            <img style="height: 400px;" src="{% static 'images/internet3.jpg' %}">
+             <h2  style="margin-right: 10px; font-weight: bold; font-size: 30px;">Bachelor of Information technology(IOT)</h2>
+             <p>
+                The Bachelor of Engineering, Information Technology (Internet of Things) programme aims to develop experts in information technology with the specialisation in Internet of Things(IoT). This programme qualifies engineers to work in the fields of IoT and Big Data; especially, in companies operating within the digital health and industrial internet sectors. The duties of an IoT graduate may vary from software design to electrical engineering, the design of smart wireless devices, and the whole IoT system in the cloud.
+             </p>
+             <a href="{% url 'iot' %}" class="btn" style="margin-right: 10px;">Read more</a>
+            </div>
+
+
+            <div class="card" style="margin-top:8px">
+             <img src="{% static 'images/engineering2.jpg' %}">
+             <h2 style="margin-right: 10px; font-weight: bold;font-size: 30px;">Bachelors Degree in  Mechanical Engineering</h2>
+             <p>
+                The Bachelor of Engineering, Mechanical Engineering programme develops technology industry experts with a specialisation in mechatronics. Mechatronics is an interdisciplinary branch of engineering that focuses on the integration of mechanical, electronic and electrical engineering systems.
+
+                At the Jerome University of Applied Sciences mechatronics is studied with machines such as mini excavators to which students can design new parts or systems. 
+             </p>
+             <a href="{% url 'engineering' %}"  class="btn ">Read more</a>
+            </div>
+         </div>
+        
+
+            
+
+        
+         
+         
+
+     </diV>
+
+     
+     
+ 
+
+{% endblock %}

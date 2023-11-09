@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    label{
+        font-weight: bold;
+        font-size: 18px;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+<h1>Fill Your Details Below</h1>
+<form method="POST" action="{% url 'applicationform' %}" class="container">
+    {% csrf_token %}
+    <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input required type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name"/>
+    </div>
+
+    <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input required type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name"/>
+    </div>
+
+    <div class="form-group">
+        <label for="programme">Programme you are applying to:</label>
+        <input required type="text" class="form-control" id="programme" name="programme" placeholder="E.g Bachelors degree in nursing"/>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Enter your email address:</label>
+        <input required type="email" class="form-control" id="email" name="email" placeholder="Email"/>
+    </div>
+
+    <div class="form-group">
+        <label for="nationality">Nationality:</label>
+        <input required type="text" class="form-control" id="nationality" name="nationality" placeholder="Nationality"/>
+    </div>
+
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input required type="text" class="form-control" id="age" name="age" placeholder="Age"/>
+    </div>
+
+    <div class="form-group">
+        <label for="school">High school or University Attended:</label>
+        <input required type="text" class="form-control" id="school" name="school" placeholder="School or University attended"/>
+    </div>
+
+    <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input required type="text" class="form-control" id="gender" name="gender" placeholder="Male or Female"/>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit Application</button>
+</form>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+      .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    body{
+        background-color: white
+    }
+    img{
+        width: 100%;
+        border-radius: 20PX;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        
+        color: rgb(245, 11, 89);;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: black;
+        
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    li{
+        font-size: 17px;
+    }
+    h3{
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+</style>
+    <h1>STUDENT SELECTION TO BACHELOR STUDIES, JOINT APPLICATION</h1>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/jointapp1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 448px;margin-right: 9px;"  src="{% static 'images/jointapp2.jpg' %}">
+
+        </div>
+    </div>
+
+    <div>
+        <h4>STUDENT SELECTION IN THE JOINT APPLICATION 2024</h4>
+        <p>Students are selected in two different ways; by using <ul>
+            <li>the International UAS Exam</li>
+            <li>SAT test</li>
+        </ul></p>
+        <h4>The International UAS Exam</h4>
+        <p>The applicant must have a biometric passport and a proof of English language skills to be able to participate in the International UAS Exam. Detailed information on the International UAS Exam, the biometric passport and the English language skills requirements will be published by the end of November 2023.  </p>
+        <h4>SAT test</h4>
+        <p>The SAT test contains following sections: <ul>
+            <li>Evidence-Based Reading and Writing <ul>
+                <li>Reading Test</li>
+                <li>Writing and Language Test</li>
+            </ul></li>
+            <li>Mathematics</li>
+        </ul></p>
+
+        <p>The lowest score the applicant must reach in order to be qualified for the selection process is 500 in both Evidence-Based Reading and Writing and Mathematics. </p>
+        <p>Only the new version of SAT test (completed after March 2016) is accepted. The SAT test selection only takes into account the sections performed during a single session. </p>
+        <p>Applicant must order an official SAT score report directly from the test organizer and it must be delivered to Savonia UAS by the set date. Savonia UAS also uses the electronic service from which the SAT score data is available. Reports printed or submitted by the applicants themselves cannot be taken into account. </p>
+        <p>Detailed information on SAT test as well as the College Board SAT code of Savonia UAS will be published by the end of November 2023. </p>
+
+        <strong>If you have any questions related to applying, please contact the Admission services.</strong>
+
+           <P> Savonia UAS Admission services
+            admissions@jerome.fi</p>
+
+
+    </div>
+
+{% endblock %}

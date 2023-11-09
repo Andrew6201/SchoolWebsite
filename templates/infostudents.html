@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        color: rgb(245, 11, 89);
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+        color: rgb(245, 11, 89);
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+        margin-left: 10px;
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-weight: bold;
+        margin-left: 10px;
+        font-size: 17px;
+    }
+    .container{
+        margin-bottom: 23px;
+    }
+</style>
+<h1>FOR STUDENTS</h1>
+<p>Welcome to Savonia UAS! Below you can find the information you need in order to successfully start your studies or traineeship with us.</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a href="#" class="btn">Before arrival</a>
+
+        </div>
+        <div class="col">
+            <a href="#" class="btn">Services for Students</a>
+        </div>
+        <div class="col">
+            <a href="#" class="btn">Life in Finland</a>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 15px;">
+        <div class="col">
+            <a href="#" class="btn">Academic Calender</a>
+
+        </div>
+        <div class="col">
+            <a href="#" class="btn">Curricula & Schedules</a>
+        </div>
+        <div class="col">
+            <a href="#" class="btn">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/engineering3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img style="height: 448px;" src="{% static 'images/internet1.jpg' %}">
+
+    </div>
+   
+</div>
+<div>
+    <h1>NEW STUDENTS</h1>
+    <p>
+        New to Savonia? Start here! Everything you need to know about starting your degree and exchange studies or traineeship at Savonia, from accepting the study place to registration, from residence permits to financing your studies and from arrival to academic practices.
+    </p>
+    <a href="#" style="margin-left: auto;margin-right: auto;display: block;" class="btn">New students</a>
+</div>
+
+
+{% endblock %}

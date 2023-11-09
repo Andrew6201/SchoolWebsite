@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color: rgb(245, 11, 89);;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>INFORMATION TECHNOLOGY(INTERNET OF THINGS)</h1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/internet1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 375px;" src="{% static 'images/internet2.jpg' %}">
+
+        </div>
+    </div>
+</div>
+<h4>BECOME AN INTERNATIONAL EXPERT ON INTERNET OF THINGS!</h4>
+
+
+    <div class="row">
+        <div class="col">
+            <p><span>Degree Programme:</span> Information Technology(Internet of Things)</p>
+            <p><span>Degree Title:</span>Bachelor of Engineering</p>
+            <p><span>Duration:</span> 240 ECTS, 4 Years</p>
+            <p><span>Study mode:</span> Full-time studies, on Campus</p>
+            <p><span>Study place:</span> Asaba, Delta State,Nigria</p>
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 30</p>
+        </div>
+        <div class="col">
+            <a href="{% url 'applyinfo' %}" class="btn">Read this first: How to apply?</a>
+            <a href="{% url 'applicationform' %}" class="btn">Apply to this programme</a>
+            <img style="height: 200px; margin-top: 20px;width: 500px;" src="{% static 'images/internet3.jpg' %}">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                The Bachelor of Engineering, Information Technology (Internet of Things) programme develops IT experts specialised in Internet of Things (IoT).
+            </p>
+            <p>
+                The programme qualifies engineers to work in the fields of IoT, Big Data and Artificial Intelligence; especially, in companies operating within the digital health and industrial internet sectors. You will also learn how to build IoT systems with good Cybersecurity, which is a crucial part of modern IoT system design. The duties of an IoT graduate may vary from software design to electrical engineering, the design of smart wireless devices, and the whole IoT system in the cloud. 
+            </p>
+           
+
+        </div>
+        <div class="col">
+            
+            <p>
+                Internet of Things graduates are prepared to work in international environments and teams, and Jerome's Bachelor of Engineering groups are Internet of Things graduates are prepared to work in international environments and teams, and Savonia’s Bachelor of Engineering groups are multinational and multicultural by nature. This degree provides you with the knowledge and skills you need to get a job in Nigeria or abroad.
+            </p>
+            <p>
+                Please note that one may apply to the programme without previous experience in Information Technology or Internet of Things.
+            </p>
+
+        </div>
+
+    </div>
+
+{% endblock %}

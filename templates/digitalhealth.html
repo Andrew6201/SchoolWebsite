@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn{
+        background-color: rgb(245, 11, 89);;;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: rgb(245, 11, 89);;;
+        color: black;
+    }
+    body{
+        
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+        
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        
+        
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>DIGITAL HEALTH, MASTER OF HEALTH CARE</h1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/internet1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 375px;" src="{% static 'images/digitalhealth.webp' %}">
+
+        </div>
+    </div>
+</div>
+<h4>STUDY THE ONLINE MASTERS PROGRAMME IN DIGITAL HEALTH!</h4>
+
+
+    <div class="row">
+        <div>
+            <p><span>Degree Programme:</span> Digital Health</p>
+            <p><span>Degree Title:</span>Master of Health Care</p>
+            <p><span>Duration:</span> 90 ECTS, 2-3 Years</p>
+            <p><span>Study mode:</span> Part-time, all studies are online</p>
+            
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 25</p>
+            <p>Digitalisation challenges social and health care activities as well as the way of thinking. A new approach to social and health care services means that the client/patient receives all information about him or her and is equally involved in the decision-making about his or her own care. Digitalisation does not, however, develop by itself but it requires multidisciplinary expertise to achieve commitment to change in the working life and to promote digitalisation actively. Digitalisation also offers possibilities for business intelligence. Health services in all EU countries have been available since the beginning of 2014, and digitalisation is introduced to add value to the cross-border services.</p>
+            <p>The Master’s Degree in Digital Health provide the graduates with skills needed for innovative development of digital social and health care services, service production, expert organisation management and for the development of service quality and management. The studies also prepare the students for planning, implementing and evaluating the social welfare and health care reform in different operational environments.</p>
+
+            <p>The studies are working-life focused and when choosing your thesis topic, you can take the development needs in your own work and work community into account and base your topic choice accordingly. It is also possible to do the thesis research to serve the needs of different partner organisations. In all assignment you are expected to use proven knowledge and apply the theory you learned into practice.</p>
+            <p>All studies are online and the student makes a personal study plan in collaboration with his/her tutoring teacher.</p>
+
+
+
+        </div>
+        <div class="col">
+            <a href="{% url 'howmasters' %}" class="btn">Read this first: How to apply?</a>
+            <a class="btn">Apply to this programme</a>
+            <img style="height: 200px; margin-top: 20px;width: 500px;" src="{% static 'images/internet3.jpg' %}">
+
+        </div>
+
+    </div>
+
+   
+
+{% endblock %}

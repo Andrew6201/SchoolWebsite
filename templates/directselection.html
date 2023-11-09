@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+      .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    body{
+        background-color: white
+    }
+    img{
+        width: 100%;
+        border-radius: 20PX;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: black;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    li{
+        font-size: 17px;
+    }
+    h3{
+        color: rgb(245, 11, 89);
+        font-weight: bold;
+        text-align: center;
+    }
+</style>
+    <h1>STUDENT SELECTION TO BACHELOR STUDIES, DIRECT APPLICATION</h1>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/jointapp1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 448px;margin-right: 9px;"  src="{% static 'images/jointapp2.jpg' %}">
+
+        </div>
+    </div>
+
+<div>
+
+    <div>
+        <h3>STUDENT SELECTION IN THE DIRECT APPLICATION 2024</h3>
+        <p>
+            The Direct application period starts on 1 November 2023. The student selection in the Direct Application is based on personal interview. It is not possible to use the SAT test score or the International UAS Exam result in the Direct Application. 
+        </p>
+        <p>The results of the student selection will be published continuously, whenever the interviews have been held and the results are ready. Application period to each degree programme ends once the group is full. </p>
+        <p>After each week, Savonia UAS Admission Services will check applications which have arrived. An applicant is eligible to the next step of the process, the personal interview, if she/he 
+            <ul>
+                <li>has the eligibility to apply in the direct application </li>
+                <li>has uploaded a copy of an official ID on the application form </li>
+            </ul>
+        </p>
+        <p>The invitation to the personal interview is sent by email at least a week before the interview. If the applicant fails to participate in the interview, it cannot be re-organized.
+            <ul>
+                <li>Interviews to Bachelor of Hospitality Management are organized only at Microkatu campus, Kuopio.</li>
+                <li>Interviews to other degree programmes are organized online by using Zoom.</li>
+            </ul>
+        </p>
+        <p>Applicant’s motivation and English skills will be tested in the interview. </p>
+        <p>If the applicant successfully completes the interview, she/he can be admitted to Savonia UAS. The applicant has 7 days’ time to accept the study place. If the applicant does not accept the study place within 7 days of being admitted to Savonia UAS, she/he will lose the study place.  Please note, that if you accept a study place in the Direct Application, you cannot apply to other UASs in the Joint Application spring 2024. More information on the <a href="{% url 'studyplace' %}">One study place per term provision.</a></p>
+
+        <p>If the applicant accepts the study place, she/he will receive information on starting studies. If the student is obligated to pay the <a href="#">tuition fee</a>, she/he receives payment details by email.  </p>
+        <p>If the applicant fails the interview, she/he will not be admitted to Savonia UAS. In addition, the applicant cannot re-apply to Savonia UAS during the ongoing Direct Application period. However, the applicant can apply to Savonia UAS in the Joint Application or in the next Direct Application.  </p>
+
+        <h3>TECHNICAL REQUIREMENTS IN THE ONLINE INTERVIEW</h3>
+        <p>The applicant is responsible for making sure that the equipment meets the following criteria. To attend the interview, you need to have: <ul>
+            <li>a computer (a desktop computer or laptop, or a mobile device or tablet) </li>
+            <li>stable internet access (and stable supply of electricity) </li>
+            <li>a web camera</li>
+            <li>a headset (or microphone and speakers) </li>
+            <li>(mouse, power cable) </li>
+        </ul></p>
+        <p>Other technical things to consider: <ul>
+            <li>Recommended browsers are Firefox, Chrome or Edge. If the link does not open, please change the browser. </li>
+            <li>If you are joining the interview with a mobile device, please make sure that you have installed Zoom to your device. </li>
+            <li>It is recommended that you test the Zoom beforehand. You can join a test meeting provided by Zoom to familiarize yourself with it. </li>
+        </ul></p>
+
+        <p>The UAS is not responsible nor has any legal liability if the equipment and/or connections do not meet the above-described criteria, and the interview is interrupted, or the applicant cannot finish it due to this. </p>
+        <p>Before the interview, tt is good to make sure that: <ul>
+            <li>you have a quiet environment and optimal lighting for clear sound and image, </li>
+            <li>the video and headset (or microphone and speakers) are working, </li>
+            <li>you know how to turn off your virtual background and/or virtual filters, </li>
+            <li>you have the needed identification document in the interview. </li>
+        </ul></p>
+        <p>If you have any questions related to applying, please contact the Admission services.
+
+            Savonia UAS Admission services
+            admissions@jerome.fi</p>
+        
+    </div>
+   
+{% endblock %}

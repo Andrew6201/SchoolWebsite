@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-weight: bold;
+    }
+</style>
+<h1>APPLYING TO MASTERS DEGREE PROGRAMMES</h1>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/about3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img src="{% static 'images/about4.jpg' %}">
+
+    </div>
+   
+</div>
+<h4>MASTER'S DEGREE PROGRAMMES</h4>
+<p>Savonia UAS has 2 Master’s degree programmes<ul>
+    <li><a href="{% url 'digitalhealth' %}">Master of Health Care, Digital Health</a></li>
+    <li><a href="{% url 'energy' %}">Master of Engineering, Energy Engineering</a></li>
+</ul></p>
+<div>
+    <h4>Joint Application 2024</h4>
+    <ul>
+        <li>Application is open from 3 to 17 January 2024. </li>
+        <li>The applicant can apply up to six (6) degree programmes in the same application form (to other UASs as well).</li>
+        <li>Savonia UAS offers one Masters Degree Program
+            <ul>
+                <li><a href="{% url 'digitalhealth' %}">Master of Health Care, Digital Health</a></li>
+            </ul>
+        </li>
+        <li>Required attachments must be uploaded to the application form by 24 January 2024.</li>
+        <li>Student selection is based on admission course</li>
+        <li>Results of the student selection will be published by 31 May 2024 at the latest</li>
+        <li>The study place must be confirmed by 11 July 2024 at the latest, or if accepted from the waiting list in June or July, within 7 days of being accepted as a student. </li>
+        <li>The waiting list is valid until 30 July 2024 </li>
+        <li>If the student is obligated to pay the tuition fee, she/he will receive instructions on how to pay the tuition fee</li>
+    </ul>
+</div>
+
+    
+<h1>IMPORTANT INFORMATION FOR APPLICANTS</h1>
+
+<div class="row">
+   
+    <div style="text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo2.jpg' %}">
+        <p>How much is the tuition fee?</p>
+        <p>Is ther a scholarship available</p>
+        <a href="{% url 'masterfees' %}" class="btn">Tuition fees for Masters students</a>
+
+    </div>
+    <div style="margin-right: 10px; text-align: center;"  class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo3.jpg' %}">
+        <p>I have been offered several study places, but how many study places i can accept?</p>
+        
+        
+        <a href="{% url 'studyplace' %}" class="btn">One study place per term provision</a>
+
+    </div>
+</div>
+{% endblock %}

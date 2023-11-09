@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color: rgb(245, 11, 89);;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>BACHELOR OF HEALTH CARE, REGISTERED NURSE</h1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/nursing3.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img src="{% static 'images/nursing1.webp' %}">
+
+        </div>
+    </div>
+</div>
+<h4>BECOME A COMPETENT AND HIGHLY SKILLED REGISTERED NURSE</h4>
+
+
+    <div class="row">
+        <div class="col">
+            <p><span>Degree Programme:</span> Registered Nurse</p>
+            <p><span>Degree Title:</span>Bachelor of Health Care</p>
+            <p><span>Duration:</span> 210 ECTS, 3.5 Years</p>
+            <p><span>Study mode:</span> Full-time studies, on Campus</p>
+            <p><span>Study place:</span> Awka, Anambra State,Nigria</p>
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 30</p>
+        </div>
+        <div class="col">
+            <a href="{% url 'applyinfo' %}" class="btn">Read this first: How to apply?</a>
+            <a href="{% url 'applicationform' %}" class="btn">Apply to this programme</a>
+            <img style="height: 200px; margin-top: 20px;width: 500px;" src="{% static 'images/nursing2.jpg' %}">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                The Bachelor of Health Care, Registered Nurse programme develops competent and highly skilled nurses with excellent knowledge in encountering, supervising and caring for people with diverse health issues.
+            </p>
+            <p>
+                During your studies, you will master the required concepts, methods and skills to enable the critical assessment and decision-making in changing and unpredictable nursing situations. You will also learn how to oversee professional work and projects, and how to work in expert jobs within the nursing field. Moreover, you will be capable of assessing your skills, and the skills and development of other people and teams. You will confidently be able to apply, assess and analyze your nursing skills in different situations.
+            </p>
+           
+
+        </div>
+        <div class="col">
+            
+            <p>
+                Similarly, you will be able to coordinate and work independently as a nursing expert in your home country and abroad. With our programme, you will be prepared for lifelong learning and have the ability to communicate verbally and in written form with different audiences in and outside the field of nursing.
+            </p>
+            <p>
+                Our Registered Nurse programme offers a multi-professional learning environment in modern facilities with a simulation center, clinical skill laboratories and health technology. The studies are implemented in a blended manner combining personal tutoring, e-learning, and clinical nursing practices aimed at deepening your multi-professional evidence-based care.
+            </p>
+
+        </div>
+
+    </div>
+
+{% endblock %}

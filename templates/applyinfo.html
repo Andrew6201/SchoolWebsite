@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        color: rgb(245, 11, 89);
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-weight: bold;
+    }
+</style>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/about3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img src="{% static 'images/about4.jpg' %}">
+
+    </div>
+   
+</div>
+<div class="programmes">
+    <h4>Jerome UAS has 4 Bacherlor's degree programmes and you will find more information about the content of these programmes from the links below:</h4>
+    <ul>
+        <li><a href="{% url 'business' %}">Bachelor of Business Administration, International Business</a></li>
+        <li><a href="{% url 'iot' %}">Bachelor of Engineering, Information Technology(Internet of Things)</a></li>
+        <li><a href="{% url 'engineering' %}">Bachelor of Business Engineering, Mechanical Engineering</a></li>
+        <li><a href="{% url 'nursing' %}">Bachelor of Health Care, Registered Nurse</a></li>
+    </ul>
+</div>
+<h4>Jerome UAS offers two applications to degree programmes conducted in English, studies starting in autumn 2024</h4>
+
+<div class="row">
+    
+    <div class="col">
+        <h1>Direct Application to Jerome UAS</h1>
+        <ul>
+            <li>Application opens on 6 January 2024</li>
+            <li>The applicant can apply only to one (1) degree programme in the application form.</li>
+            <li>Application period to each degree programme ends once the group is full.   </li>
+            <li>Required attachments must be uploaded to the application form before the application form can be sent.</li>
+            <li>Student selection is based on personal interview. </li>
+            <li>The results of the student selection will be published continuously, whenever the interviews have been held and the results are ready. </li>
+            <li>Study place must be confirmed within 7 days of being accepted as student. </li>
+            <li>If the student is obligated to pay the tuition fee, she/he will receive instructions on how to pay the tuition fee</li>
+            
+        </ul>
+        <a href="{% url 'directapp' %}" class="btn">Read more information on Direct Application</a>
+
+    </div>
+    <div class="col">
+        <h1>Joint Application 2024</h1>
+        <ul>
+            <li>Application is open from 3 to 17 January 2024. </li>
+            <li>The applicant can apply up to six (6) degree programmes in the same application form (to other UASs as well).</li>
+            <li>Required attachments must be uploaded to the application form by 24 January 2024.</li>
+            <li>Student selection can be done in two ways:
+                <ul>
+                    <li>International UAS Exam</li>
+                    <li>SAT test score</li>
+                </ul>
+                
+                
+            </li>
+            <li>Results of the student selection will be published by 31 May 2024 at the latest. </li>
+            <li>The study place must be confirmed by 11 July 2024 at the latest, or if accepted from the waiting list in June or July, within 7 days of being accepted as a student. </li>
+            <li>The waiting list is valid until 30 July 2024 </li>
+            <li>If the student is obligated to pay the tuition fee, she/he will receive instructions on how to pay the tuition fee</li>
+        </ul>
+        <a href="{% url 'jointapp' %}" class="btn">Read more information on Joint Application</a>
+    </div>
+</div>
+
+<h1>IMPORTANT INFORMATION FOR APPLICANTS</h1>
+
+<div class="row">
+    <div style="margin-left: 10px;text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo1.jpg' %}">
+        <p>Who is eligible to apply?</p>
+        <p>What documents are neede for applying?</p>
+        <a href="{% url 'eligibility' %}" class="btn">Eligibility</a>
+
+    </div>
+    <div style="text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo2.jpg' %}">
+        <p>I have been offered several study places, but how many study places I can accept?</p>
+        <a href="{% url 'studyplace' %}" class="btn">One study place per term provision</a>
+
+    </div>
+    <div style="margin-right: 10px; text-align: center;"  class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo3.jpg' %}">
+        <p>How is life in Finland?</p>
+        <p>Where to find housing?</p>
+        
+        <a href="{% url 'infostudents' %}" class="btn">Information for Students</a>
+
+    </div>
+</div>
+{% endblock %}

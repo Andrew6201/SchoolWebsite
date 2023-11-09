@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color: rgb(245, 11, 89);;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>BACHELOR OF MECHANICAL ENGINEERING</h1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/engineering2.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img  src="{% static 'images/engineering3.jpg' %}">
+
+        </div>
+    </div>
+</div>
+<h4>BECOME AN INTERNATIONAL EXPERT ON MECHANICAL ENGINEERING</h4>
+
+
+    <div class="row">
+        <div class="col">
+            <p><span>Degree Programme:</span> Mechanical Engineering</p>
+            <p><span>Degree Title:</span>Bachelor of Engineering</p>
+            <p><span>Duration:</span> 240 ECTS, 4 Years</p>
+            <p><span>Study mode:</span> Full-time studies, on Campus</p>
+            <p><span>Study place:</span> Asaba, Delta State,Nigria</p>
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 25</p>
+        </div>
+        <div class="col">
+            <a href="{% url 'applyinfo' %}" class="btn">Read this first: How to apply?</a>
+            <a href="{% url 'applicationform' %}" class="btn">Apply to this programme</a>
+            <img style="height: 200px; margin-top: 20px;width: 500px;" src="{% static 'images/engineering4.webp' %}">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                The Bachelor of Engineering, Mechanical Engineering programme develops technology industry experts with a specialisation in mechatronics. Mechatronics is an interdisciplinary branch of engineering that focuses on the integration of mechanical, hydraulical, pneumatical, electrical engineering and digital control systems.
+            </p>
+            <p>
+                At the Jerome University of Applied Sciences, mechatronics is studied with machines such as mini excavators to which students can design new parts or systems. Other examples of mechatronics are industrial robots and miniature smart factories.  These will also become familiar to Mechanical Engineering students at Jerome UAS.
+            </p>
+           
+
+        </div>
+        <div class="col">
+            
+            <p>
+                The degree programme qualifies engineers to work in high technology companies working on international technology projects. The duties of a mechanical engineering graduate fall within the fields of mechanical engineering and control system. Engineer’s responsibilities may include planning, machine design, product development, production development, manufacturing, procurement, resource planning, system development, supply chain management, management, service chain management, maintenance and other industrial-related activities.
+            </p>
+            <p>
+                In addition, to acquiring industrial engineering know-how, an important part of the programme focuses on developing an international competence, learning how to operate effectively in a variety of interpersonal networks, and cultivating communication, social, teamwork, and problem-solving skills. The goal is to educate high-quality team players instead of individual autonomous workers.
+            </p>
+
+        </div>
+
+    </div>
+
+{% endblock %}

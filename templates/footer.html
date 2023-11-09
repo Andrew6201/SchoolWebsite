@@ -1,0 +1,37 @@
+
+<style>
+    /* Define your custom footer style */
+    .custom-footer {
+        background-color: rgb(0,0,0); /* Choose your background color here */
+        color: #fff; /* Text color */
+        margin-top: 20px;
+    }
+</style>
+
+<footer class="custom-footer" >
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Jerome University of Applied Sciences</h5>
+                <p>Jerome UAS is one of Finland's biggest and most versatile Universities of Applied Sciences. Our campuses are located in the cities of Kuopio, Iisalmi and Varkaus. We have over 5000 Finnish students, 500 international students and 500 employees. </p>
+            </div>
+            <div class="col-md-3">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-light" href="{% url 'home' %}">Home</a></li>
+                    
+                    <li><a class="text-light" href="{% url 'about' %}">About</a></li>
+                    <li><a class="text-light" href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Email: contact@jerome.com</p>
+                <p>Phone: +1 (123) 456-7890</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center py-3">
+        &copy; 2023 Jerome. All rights reserved
+    </div>
+</footer>

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        color: rgb(245, 11, 89);
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+        color: rgb(245, 11, 89);
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-weight: bold;
+    }
+</style>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/about3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img src="{% static 'images/about4.jpg' %}">
+
+    </div>
+   
+</div>
+<div>
+    <h1>HOW MANY STUDY PLACES CAN YOU ACCEPT?</h1>
+    <h4>ONE STUDY PLACE PER TERM PROVISION</h4>
+    <p>
+        According to this provision, a student may accept only one study place leading to a higher education degree in Finland in education that begins in the same academic term. This rule applies to all higher education.
+    </p>
+    <p>
+        Higher education degrees included in the provision are:
+        <ul>
+            <li>Bachelor degrees and Master degrees awarded by Finnish universities of applied sciences</li>
+            <li>Bachelor degrees and Master degrees awarded by Finnish universities</li>
+            <li>Licentiate and Doctoral degrees awarded by Finnish universities</li>
+        </ul>
+    </p>
+    <p>
+        The provision applies to higher education regardless of how the studies are provided. For example, if you have accepted a study place from a separate application, you cannot accept a study place from the joint application in the same term.
+    </p>
+    <p>
+        Only exceptions to the provision are:
+        <ul>
+            <li>Transfer student selections</li>
+            <li>the Åland Polytechnic</li>
+            <li>the Police College of Finland</li>
+        </ul>
+    </p>
+    <p>
+        Furthermore, the provision cannot be applied to studies completed at foreign higher education institutions.
+    </p>
+    <p>
+        The academic term (from 1 August to 31 December or 1 January to 31 July) is the set framework for implementation. The provision does not prevent acceptance of a place in another degree programme during another academic term. Even if the student postpones the commencement of studies, or interrupts his/her studies, that student cannot accept another study place for a degree programme starting in the same academic term.
+    </p>
+    <p>If you have any questions related to applying, please contact the Admission services.</p>
+    <p>Jerome UAS Admission services</p>
+    <a href="#">admissions@jerome.fi</a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,118 @@
+{% load static %}
+<style>
+    
+        
+   body{
+    background-color: rgb(245, 11, 89);
+   }
+    .title{
+        text-align: center;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .btn{
+        
+        margin-top: 5px;
+        width: 400px;
+        background-color: white;
+        color: black;
+        font-weight: bold;
+
+        
+
+        
+        
+    }
+    .btn:hover{
+        background-color: black;
+        color: white;
+    }
+    .degree-heading{
+        font-weight: bold;
+        color: white;
+        font-size: 30px;
+    }
+   .bach-degrees{
+    color: rgb(0,0,0);
+    font-weight: bold;
+    font-size: 18px;
+   }
+   .cont-heading{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(0,0,0);
+   }
+   .cont-subheading{
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+   }
+   .welcome{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(245, 11, 89);;
+    
+   }
+  .text{
+    font-size: 17px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="container">
+    <h1 class="cont-heading">Are You ready to step into a Brighter, More Diverse Higher-Learning Experience?</h1>
+    <p class="cont-subheading">Jerome offers Bachelor's degree Programmes and Masters degree Programmes in English</p>
+    <div class="row">
+        <div class="col">
+            <h1 class="degree-heading" >Bachelor's Degree Programs</h1>
+            <ul class="bach-degrees">
+                <li>Bachelor's Degree in International business</li>
+                <li>Bachelor's Degree in Nursing </li>
+                <li>Bachelor's Degree in Internet of Things </li>
+                <li>Bacherlor's Degree in Mechanical Engineering </li>
+
+            </ul>
+            <a class="btn" href="{% url 'bachdegree' %}">Bachelor's Degrees</a>
+        </div>
+        <div class="col">
+            <h1 class="degree-heading">Masters's Degree Programs</h1>
+            <ul class="bach-degrees">
+                
+                <li>Masters Degree in Energy Engineering</li>
+                <li>Masters Degree in Digital Health</li>
+                
+                
+            </ul>
+            <a class="btn" href="{% url 'mastersdegree' %}">Masters Degrees</a>
+        </div>
+
+    </div>
+</div>
+
+
+    <div class="row" style="background-color: white;margin-top: 10px;">
+        <div class="col">
+            <img style="width: 100%; margin-top: 5px;" src="{% static 'images/misavonia.png' %}">
+        </div>
+        <div class="col" style="background-color: white;margin-top: 5px;">
+            <h4 class="welcome">Welcome to Jerome University</h4>
+            <p class="text">We are a University of Applied Science committed to the education of strong proffessionals in different study fields. Our versatile programs offer students the opportunity to study as a full-time student or alongside their work (Master’s Degree and specialised studies).</p>
+            <p class="text">We are a University of Applied Science of about 4300 students and 280 employees, producing and offering knowledge with a big heart.</p>
+
+            <a class="btn" style="background-color:black ; color: white;" href="{% url 'about' %}">Read more about Jerome</a>
+        </div>
+    </div>
+
+
+
+
+    
+    
+    

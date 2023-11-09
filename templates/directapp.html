@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+      .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    body{
+        background-color: white
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: black;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    li{
+        font-size: 17px;
+    }
+    h3{
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+</style>
+    <h1>DIRECT APPLICATION</h1>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/directapp.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img  src="{% static 'images/directapp1.jpg' %}">
+
+        </div>
+    </div>
+
+<div>
+    <h3>DIRECT APPLICATION IS TARGETED TO THOSE  </h3>
+    <ul>
+        <li>who want to secure the study place at early stage and, e.g., allow plenty of time to organize the residence permit issues and housing </li>
+        <li>who are ready to confirm the study place within 7 days and pay the tuition fee within 14 days of being accepted as student </li>
+    </ul>
+
+    <h1>TIME TABLE AND APPLICATION PROCESS IN THE DIRECT APPLICATION 2024</h1>
+    <ul>
+        <li>Direct Application period opens on 1 November 2023.</li>
+        <li>Application period to each degree programme ends once the group is full. </li>
+        <li>The applicant can apply only to one (1) degree programme in the application form.</li>
+        <li><a href="#">Required attachments</a> must be uploaded to the application form before the application form can be sent:<ul>
+            <li>Copies of final Certificates</li>
+            <li>copies of official translations of your certificates, if they are not in English, Finnish or Swedish</li>
+            <li>a copy of the official passport / ID-card</li>
+
+            </ul>
+        </li>
+        <li><a href="#">Student selection</a> is based on personal interview, in which the applicant’s motivation and the English language skills are evaluated. </li>
+        <li>After each week, Admission Services will check applications which have arrived. An applicant is eligible to the next step of the process, the personal interview, if she/he
+            <ul>
+                <li>has the eligibility to apply in the Direct application  </li>
+                <li>has uploaded a copy of an official ID/passport on the application form  </li>
+            </ul>
+        </li>
+        <li>The results of the student selection will be published continuously, whenever the interviews have been held and the results are ready. </li>
+        <li>Admitted students must confirm their study place within <strong>7 days of being accepted as student</strong>. </li>
+        <li>If the student is obligated to pay the <a href="#">tuition fee</a>, the deadline for paying it is <strong>within 14 days of being accepted as student</strong>. </li>
+        <li>Studies will begin <strong>in the end of August 2024</strong>.</li>
+    </ul>
+</div>
+    
+{% include 'importantinfo.html' %}
+{% endblock %}

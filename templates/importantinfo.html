@@ -1,0 +1,54 @@
+{% load static %}
+<h1>IMPORTANT INFORMATION FOR APPLICANTS</h1>
+
+
+
+<div class="row" style="margin-top: 15px;">
+    <div style="margin-left: 10px;text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo4.webp' %}">
+        <p>Where can i find the application form?</p>
+        <p>How do i fill the application form?</p>
+        <a href="{% url 'howdirect' %}" class="btn">How to apply in the Direct Application</a>
+
+    </div>
+    <div style="text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo5.webp' %}">
+        <p>How are students selected?</p>
+        <p>Is there an interview?</p>
+        <p>Can i use SAT or International UAS exam</p>
+        <a href="{% url 'directselection' %}" class="btn">Student selection in the Direct Application?</a>
+
+    </div>
+    <div style="margin-right: 10px; text-align: center;"  class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo6.webp' %}">
+        <p>How much is the tuition fee?</p>
+        <p>Is there a scholarship available?</p>
+        
+        <a href="{% url 'directfees' %}" class="btn">Tuition fees for bachelor students, Direct Application</a>
+
+    </div>
+</div>
+
+<div class="row">
+    <div style="margin-left: 10px;text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo1.jpg' %}">
+        <p>Who is eligible to apply?</p>
+        <p>What documents are neede for applying?</p>
+        <a href="{% url 'eligibility' %}" class="btn">Eligibility</a>
+
+    </div>
+    <div style="text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo2.jpg' %}">
+        <p>I have been offered several study places, but how many study places I can accept?</p>
+        <a href="{% url 'studyplace' %}" class="btn">One study place per term provision</a>
+
+    </div>
+    <div style="margin-right: 10px; text-align: center;"  class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo3.jpg' %}">
+        <p>How is life in Finland?</p>
+        <p>Where to find housing?</p>
+        
+        <a href="{% url 'infostudents' %}" class="btn">Information for Students</a>
+
+    </div>
+</div>

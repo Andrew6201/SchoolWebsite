@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+     .btn{
+        background-color: rgb(245, 11, 89);;;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: rgb(245, 11, 89);;;
+        color: black;
+    }
+    body{
+        
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+        
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        
+        
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>ENERGY OF ENGINEERING</h1>
+    <H1>MASTER OF ENGINEERING</H1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/internet1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 375px;" src="{% static 'images/energy.webp' %}">
+
+        </div>
+    </div>
+</div>
+<h4>ENSURE YOUR INTERNATIONAL COMPETENCE STUDYING WITH US!</h4>
+
+
+    <div class="row">
+        <div>
+            <p><span>Degree Programme:</span> Energy Enginnering</p>
+            <p><span>Degree Title:</span>Master of Engineering(M.Eng)</p>
+            <p><span>Duration:</span> 60 ECTS, 1.5-2 Years</p>
+            <p><span>Study mode:</span> Part-time, online studies</p>
+            
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 30</p>
+            <p>The focus of the Master Degree Programme in Energy Engineering is to educate professionals in engineering and business management in the field of international energy engineering projects. The aim of the programme is to create highly skilled specialists for the following fields of expertise: managing international technology projects and supply chains, developing advanced energy production systems, intercultural communication and language skills, and specialized themes in engineering. </p>
+            <p>Curriculum of degree programme in energy engineering has been drawn up, so that <ul>
+                <li>the degree produces the degree of competence required in work life </li>
+                <li>the education ensures the development of the student’s expertise </li>
+                <li></li>
+            </ul>the education enhances lifelong learning </p>
+
+            <p>The Student<ul>
+                <li>draws up to support his/her studies an individual study plan in which earlier acquired competence is identified </li>
+                <li>is responsible for the progression of his/her studies. </li>
+            </ul></p>
+            <p>Savonia’s teachers and other personnel facilitate and support in the defining and achieving of individual goals. The student starts the planning of the thesis in during the first semester. </p>
+            <p>The competence objective is that the student is able to evaluate and make use of national and international networks. In addition, she/he creates multi professional partnerships in energy engineering field. She/he is able to direct and develop partnerships and brings one’s expertise in interdisciplinary networks/groups. </p>
+
+
+
+        </div>
+        <div class="col">
+            <a href="{% url 'howmasters' %}" class="btn">Read this first: How to apply?</a>
+            <a class="btn">Apply to this programme</a>
+            
+
+        </div>
+
+    </div>
+
+   
+
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+        .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    img{
+        width: 100%;
+        border-radius: 100px;
+    }
+    .programmes{
+        margin-left: 15px;
+        margin-right: 15px;
+        font-weight: bold;
+        font-size: 18px;
+        
+    }
+    a{
+        
+        
+    }
+    li{
+        margin-top: 8px;
+        font-size: 17px;
+    }
+    h4{
+        font-weight: bold;
+        margin-top: 17px;
+        margin-bottom: 17px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        margin-top: 15px;
+        color: rgb(245, 11, 89);
+        font-weight: bold;
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 17px;
+    }
+    .all{
+        margin-left: 15px;
+    }
+</style>
+<h1>TUITION FEES FOR MASTERS PROGRAMMES MASTERS DEGREE PROGRAMMES</h1>
+<div class="row">
+    <div class="col">
+        <img src="{% static 'images/about3.jpg' %}">
+
+    </div>
+    <div class="col">
+        <img src="{% static 'images/about4.jpg' %}">
+
+    </div>
+   
+</div>
+<div class="all">
+    <h4>INFORMATION ABOUT THE TUITION FEES IN JEROME FOR MASTER'S PROGRAMMES</h4>
+    <p>The legislation concerning tuition fees came into effect on 1 January 2016. According to the legislation, Universities of Applied Sciences are obliged to charge tuition fees for those students who are not citizens of countries of the European Union (EU) or the European Economic Area (EEA) and starting their degree studies 1 August 2017 and onwards. The legislation concerns degree programmes conducted in English. The amount of the tuition fee and the Early bird -price is checked annually and decided by the end of each year.</p>
+    <strong>For those Master students, who start their studies in autumn 2023 or later, the tuition fee is 9000 euros per academic year.</strong>
+    <p> There is no scholarship scheme for the 1st academic year. However, there is a possibility to get the 1st academic year with an Early Bird price of 5400 euros. In upcoming years, the tuition fee is 9000 euros for the academic year and there is also a scholarship scheme based on study success.</p>
+    <p>The tuition fee is charged for each academic year, and it must be paid by the set date. If a student fails to pay the tuition fee in time, she/he cannot enroll for the academic year and therefore loses the study place.</p>
+</div>
+{% endblock %}

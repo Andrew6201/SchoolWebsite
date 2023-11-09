@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .btn{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color: rgb(245, 11, 89);;
+    }
+    img{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: white;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: white;
+        font-weight: bold;
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    
+</style>
+    <h1>BACHELOR OF INTERNATIONAL BUSINESS</h1>
+    
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/business1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 377px;" src="{% static 'images/business2.avif' %}">
+
+        </div>
+    </div>
+</div>
+<h4>START YOUR JOURNEY TOWARDS GLOBAL BUSINESS</h4>
+
+
+    <div class="row">
+        <div class="col">
+            <p><span>Degree Programme:</span> International Business</p>
+            <p><span>Degree Title:</span>Bachelor of Business Administration</p>
+            <p><span>Duration:</span> 210 ECTS, 3.5 Years</p>
+            <p><span>Study mode:</span> Full-time studies, on Campus</p>
+            <p><span>Study place:</span> Agbani Road, Enugu,Nigeria</p>
+            <p><span>Language:</span> English</p>
+            <p><span>Annual intake:</span> 40</p>
+        </div>
+        <div class="col">
+            <a href="{% url 'applyinfo' %}" class="btn">Read this first: How to apply?</a>
+            <a href="{% url 'applicationform' %}" class="btn">Apply to this programme</a>
+            <img style="height: 200px; margin-top: 20px;width: 500px;" src="{% static 'images/business3.avif' %}">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <p>
+                The Bachelor of Business Administration, International Business programme develops global business experts with a focus on international sales and markets. BBA graduates are valuable assets to small and medium-sized companies going global. Our BBAs work in import-export operations, marketing, international sales, customer care, and other international activities.
+            </p>
+            <p>
+                Our programme prepares you to find careers in the field of international business and to be sensitive to the requirements set by international partners. You will learn to operate fluently in multicultural environments and learn to lead your team towards reaching specific objectives.
+            </p>
+           
+
+        </div>
+        <div class="col">
+            
+            <p>
+                This degree provides you with the knowledge and skills you need to get a job in Nigeria or abroad. Since learning English may open more doors to International business life, Jerome offers many possibilities to learn English during your studies if you don’t speak the language yet.
+            </p>
+            <p>
+                 There is a demand for business management professions also in the public sector. In the future, you can work in sales or marketing, in development management or financial management, to mention a few possibilities. Some of our students have also set up a company, and they work as entrepreneurs. Lots of opportunities are available to business management professionals.
+            </p>
+
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+<style>
+    img{
+        margin-top: 5px;
+        width: 100%;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);
+    }
+    .all{
+        
+        width: 1300px;
+
+    }
+    p{margin-left: 15px;
+    font-size: 17px;}
+    h5{
+        text-align: center;
+    }
+</style>
+<div class="row">
+    <div style="margin-left: 10px;text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/about1.jpg' %}">
+      
+
+    </div>
+    <div style="text-align: center;" class="col">
+        <img class="lastimage" src="{% static 'images/applyinfo2.jpg' %}">
+        
+
+    </div>
+
+    
+    <h4>ELIGIBILITY TO APPLY FOR BACHELOR STUDIES</h4>
+    ,<h5>Eligibility to apply for Bachelor studies can be obtained with: </h5>
+    <div class="all">
+    <ul>
+        <li>the studies required for graduating from the Finnish upper secondary school or a Matriculation Examination </li>
+        <li>an International Baccalaureate (IB) degree</li>
+        <li>a European Baccalaureate (EB) degree </li>
+        <li>a Reifeprüfung (RP) or Deutsche Internationale Abitur (DIA) degree </li>
+        <li>a Finnish basic vocational degree covering 120 credits or a skills score of 180 or a corresponding earlier Finnish vocational degree covering at least 80 credits  </li>
+        <li>a Finnish intermediate or higher vocational training degree </li>
+        <li>a Finnish basic vocational degree, another vocational degree or specialised vocational degree in the form of competence-based qualification, or a corresponding earlier degree</li>
+        <li>a foreign degree or qualification which gives eligibility for higher education in the awarding country (e.g. a high school diploma, an upper general certificate of education, a higher secondary school certificate), or</li>
+        <li>a Bachelor’s or Master’s degree</li>
+    </ul>
+
+    <p>
+        Please note, that if you apply in the Direct Application, your degree must be completed and you must have the final certificate. Applying in the Joint Application is possible if you will have your final certificate by 11 July 2024.
+    </p>
+    <p>
+        Copies of final certificates must be uploaded to the application form. Copies of certificates are required from everyone whose basic education information is not available electronically: Matriculation Examination completed before 1990 in Finland; applicants applying with a Finnish upper secondary school certificate only; EB, IB, RP/DIA applicants; vocational degrees completed before 2017 in Finland; all degrees completed outside Finland.
+    </p>
+    <p>
+        If the language of the certificate is other than Finnish, Swedish or English, an official translation must also be submitted. The translation must be signed and stamped by the authorized translator. 
+    </p>
+    <p>
+        Admitted students’ eligibility for application will be verified. Savonia UAS may require to see original documents before studies start. Savonia UAS may cancel the applicant’s study place if the applicant fails to submit the required documents by the set date or if the applicant has provided incorrect personal information.
+    </p>
+
+    <h4>APPLICANTS WITH A REFUGEE/REFUGEE-LIKE SITUATION</h4>
+    <p>
+        If an applicant is a refugee or in a refugee-like situation and is unable to submit documentary evidence of his / her qualification, he / she can still apply to Savonia UAS. The applicant must have an official decision attesting to his / her refugee status, e.g. a decision on asylum or a residence permit granted on the basis of a need for protection.  
+    </p>
+    <p>
+        In addition to filling in the online application form during the application period at Studyinfo.fi, an applicant with a refugee / refugee-like situation must upload a copy of the decision to the application form. 
+    </p>
+
+    <p>
+        If you have any questions related to applying, please contact the Admission services.
+        admissions@jerome.fi
+    </p>
+    </div>
+
+{% endblock %}

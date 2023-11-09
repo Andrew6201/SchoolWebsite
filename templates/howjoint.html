@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+      .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    body{
+        background-color: white
+    }
+    img{
+        width: 100%;
+        border-radius: 20PX;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        color: black;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: black;
+        
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    li{
+        font-size: 17px;
+    }
+    h3{
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+</style>
+    <h1>HOW TO APPLY IN THE JOINT APPLICATION</h1>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/jointapp1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 448px;margin-right: 9px;"  src="{% static 'images/jointapp2.jpg' %}">
+
+        </div>
+    </div>
+
+    <div>
+        <h4>JOINT APPLICATION TO HIGHER EDUCATION</h4>
+        <p>Joint application means that you can apply to up to six (6) study programmes with one (1) application form. These 6 options may include degree programmes from one or several different higher education institutions. Please note, that if you submit several application forms, only the newest one will be taken into consideration and all others will be deleted. Higher education institutions will not inform applicants about deleted applications.</p>
+        <p>In the spring joint application for study programmes offered in English you do not have to place the study programmes in order of preference, and you can be offered admission to several study programmes. However, you can accept only one study place of those offered to you.</p>
+        <h4>HOW TO APPLY IN THE JOINT APPLICATION TO HIGHER EDUCATION</h4>
+        <p>Steps to follow:</p>
+        <p>1. Check the eligibility criteria and make sure you have all necessary documents (and translations if needed) available when the application period starts.</p>
+        <p>2. Find out which study programmes you are going to apply to in the joint application. <ul>
+            <li>To the application form you can choose only programmes offered in the joint application. </li>
+            <li>You can search for study programmes from Studyinfo-website. </li>
+            <li><a href="{% url 'bachdegree' %}">Bachelor’s degree programmes Savonia UAS is offering</a></li>
+            <li><a href="{% url 'mastersdegree' %}">Master’s degree programmes Savonia UAS is offering </a></li>
+        </ul></p>
+        <p>3. Fill in the application form during the application period.<ul>
+            <li>Make sure that you allow enough time for filling in the application.</li>
+            <li>In order to submit the application form you are required to answer at least mandatory questions marked with an asterisk (*). You can check the missing information by clicking “Check x answers” at the top of the page (Under Submit application button).</li>
+        </ul></p>
+        <p>4. Click Submit application button on the top right corner of the page. <ul>
+            <li>Please remember to submit your application before the end of the application period. Late applications will not be considered.</li>
+            <li>After submitting the application, you will receive a confirmation email to the address you have given on the application form.</li>
+        </ul></p>
+        <p>5. After submitting your application form, follow your email regularly.<ul>
+            <li>Read carefully all emails related to your application and ask if you have any concerns.</li>
+            <li>Act quickly if you are asked for more information to support your application. Your application cannot be handled if necessary information or document is missing.</li>
+            <li>Follow instructions and timetable given on e.g. attachments or entrance exam.</li>
+        </ul></p>
+        <p>If you have any questions or concerns on your application, of if you wish to cancel your application, please contact the admission services of the higher education institutions you have applied to. Also, if you have not received the confirmation email within 24 hours, please contact one of the higher education institutions you have applied to. They can check if your application form has been received and if the email address on the application form is correct.</p>
+
+        <p>
+
+            Savonia UAS Admission services
+            admissions@jerome.fi</p>
+
+
+    </div>
+
+{% endblock %}

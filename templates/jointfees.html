@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+      .btn{
+        background-color: rgb(245, 11, 89);
+        color: white;
+        font-weight: bold;
+    }
+    .btn:hover{
+        background-color:  rgb(245, 11, 89);
+        color: black;
+    }
+    body{
+        background-color: white
+    }
+    img{
+        width: 100%;
+        border-radius: 20PX;
+    }
+    h1{
+        text-align: center;
+        font-weight: bold;
+        color: rgb(245, 11, 89);;
+    }
+    h4{
+        text-align: center;
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 25px;
+        
+        color: rgb(245, 11, 89);;
+    }
+    span{
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+    p{
+        color: black;
+        
+        margin-left: 14px;
+        font-size: 17px;
+    }
+    li{
+        font-size: 17px;
+    }
+    h3{
+        color: rgb(245, 11, 89);
+    }
+    .lastimage{
+        border-radius: 100px;
+        margin-top: 15px;
+    }
+</style>
+    <h1>TUITION FEES FOR BACHELOR'S DEGREE PROGRAMMES. JOINT APPLICATION</h1>
+    <div class="row">
+        <div class="col">
+            <img src="{% static 'images/applyinfo1.jpg' %}">
+            
+
+        </div>
+        <div class="col">
+            <img style="height: 448px;margin-right: 9px;"  src="{% static 'images/applyinfo2.jpg' %}">
+
+        </div>
+    </div>
+
+    <div>
+        <h4>TUITION FEES FOR BACHELOR'S DEGREE PROGRAMMES, JOINT APPLICATION</h4>
+        <p>The legislation concerning tuition fees came into effect on 1 January 2016. According to the legislation, Universities of Applied Sciences are obliged to charge tuition fees for those students who are not citizens of countries of the European Union (EU) or the European Economic Area (EEA) and starting their degree studies 1 August 2017 and onwards. The legislation concerns degree programmes conducted in English. </p>
+        <strong>For those Bachelor students, who start their studies in autumn 2023 or later, the tuition fee is 8000 euros per academic year.</strong>
+        <p>The tuition fee is charged for each academic year, and it must be paid by the set date. If a student fails to pay the tuition fee in time, she/he cannot enroll for the academic year and therefore loses the study place. The amount of the tuition fee and the Early bird -price is checked annually and decided by the end of each year.</p>
+       
+        <p><a class="btn" href="{% url 'scholarship' %}">Scholarship</a></p>
+
+        <strong>If you have any questions related to applying, please contact the Admission services.</strong>
+
+           <P> Savonia UAS Admission services
+            admissions@jerome.fi</p>
+
+
+    </div>
+
+{% endblock %}

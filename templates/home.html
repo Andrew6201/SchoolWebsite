@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: px;
+    }
+
+    .image-container img {
+        margin: 0 1px; /* Add some horizontal spacing between the images */
+    }
+.subheding{
+    text-align: center;
+}
+img{
+    border-radius: 20px;
+}
+
+</style>
+
+<div class="image-container">
+    <img style="width: 100%;" src="{% static 'images/learn.jpg' %}">
+    <img style="width: 100%;" src="{% static 'images/studentspics.webp' %}">
+</div>
+
+{% include 'belowhome.html' %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h1 class="card-title">Jerome</h1>
+                    <p class="card-text">We are a University of Applied Sciences of about 5500 students and 230 employees, producing and offering knowledge with a big heart</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+{% endblock %}
